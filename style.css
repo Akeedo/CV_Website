@@ -23,6 +23,122 @@
     }
 }
 
+/* ── Mobile: up to 480px ── */
+@media screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 10px;
+    border-radius: 0;
+  }
+  .main {
+    flex-direction: column;
+  }
+  .left, .right {
+    flex: none;
+    width: 100%;
+    padding: 15px;
+  }
+  .img-area {
+    width: 130px;
+    height: 130px;
+  }
+  h2 {
+    font-size: 14px;
+    padding: 10px;
+  }
+  .header h3 {
+    font-size: 16px;
+  }
+  .left p, .right p, ul li {
+    font-size: 16px;
+  }
+  .right h3 {
+    font-size: 17px;
+  }
+  .skill-label {
+    font-size: 14px;
+  }
+}
+
+/* ── Small tablets: 481px – 600px ── */
+@media screen and (min-width: 481px) and (max-width: 600px) {
+  .container {
+    width: 95%;
+    height: auto;
+    margin: 20px auto;
+  }
+  .main {
+    flex-direction: column;
+  }
+  .left, .right {
+    flex: none;
+    width: 100%;
+    padding: 20px;
+  }
+  h2 {
+    font-size: 15px;
+  }
+  .left p, .right p, ul li {
+    font-size: 17px;
+  }
+  .img-area {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* ── Tablets: 601px – 767px ── */
+@media screen and (min-width: 601px) and (max-width: 767px) {
+  .container {
+    width: 95%;
+    height: auto;
+    margin: 30px auto;
+  }
+  .main {
+    flex-direction: column;
+  }
+  .left, .right {
+    flex: none;
+    width: 100%;
+  }
+  h2 {
+    font-size: 17px;
+  }
+  .left p, .right p, ul li {
+    font-size: 18px;
+  }
+}
+
+/* ── Large tablets: 768px – 991px ── */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .container {
+    width: 95%;
+    height: auto;
+    margin: 40px auto;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  .left p, .right p {
+    font-size: 19px;
+  }
+}
+
+/* ── Small desktops: 992px – 1199px ── */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    width: 95%;
+    height: auto;
+  }
+}
+
+/* ── Also fix the base .container — remove the fixed height ── */
+/* Change height: 2578px  →  height: auto  in your base styles  */
+
+
+
 body{
     background: linear-gradient(to right, #ec6ead, #608bd9);
 }
